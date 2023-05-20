@@ -5,9 +5,10 @@ from gower import gower_matrix
 app = Flask(__name__)
 
 # Load your survey data into a pandas DataFrame
-data = pd.read_csv("C:/Users/aycaa/Downloads/260Datav1.csv")
+data = pd.read_csv("260Datav2.csv")
 
-uniData = pd.read_csv("merged_data.csv")
+
+# uniData = pd.read_csv("merged_data.csv")
 
 
 @app.route('/')
@@ -17,7 +18,6 @@ def index():
 
 @app.route('/recommendation', methods=['POST'])
 def recommendation():
-
     # Get the user inputs from the form
     major = request.form['major']
     university = request.form['university']
@@ -60,22 +60,43 @@ def recommendation():
     # Get the index of the user input row
     user_input_index = len(data_with_input) - 1
 
-    # Find the similarity scores between the user input and all rows
-    similarity_scores = distance_matrix[user_input_index, :]
-
     # Calculate the distances between the user input and all other rows
     distances = distance_matrix[user_input_index, :]
 
     # Sort the distances and get the indices of the 5 most similar rows
-    similar_indices = distances.argsort()[1:6]
+    similar_indices = distances.argsort()[1:2]
 
-    # Get the 5 most similar rows
     similar_rows = data.loc[similar_indices]
 
+    # Get the university name from the most similar row
+    most_similar_university = similar_rows.iloc[0]['Hangi ünide okuyorsunuz? YÜKSEKLİSANS']
+    cluster = find_similar_universities(most_similar_university)
+    cluster_df = pd.DataFrame(cluster)
+    cluster_df.columns=['Universities']
     # Prepare the result message
-    result_message = f"<h3>Universities:</h3>{similar_rows.to_html()}"
+    result_message = f"<h3>Universities:</h3>{cluster_df.to_html()}"
 
     return render_template('index.html', result=result_message)
+
+
+def find_similar_universities(university):
+    # Read the CSV file containing the universities and their cluster information
+    df_mergedData = pd.read_csv('merged_data.csv')
+
+    # Find the row with the matching university in the specified CSV file
+    matched_row = df_mergedData[df_mergedData['University'] == university]
+
+    if matched_row.empty:
+        print(f"No matching university found: {university}")
+        return []
+
+    # Get the cluster ID of the matched university
+    matched_cluster_id = matched_row['Cluster'].values[0]
+
+    # Find all universities with the same cluster ID
+    unis = df_mergedData[df_mergedData['Cluster'] == matched_cluster_id]['University'].tolist()
+
+    return unis
 
 
 if __name__ == '__main__':
