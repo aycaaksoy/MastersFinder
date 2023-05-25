@@ -3,6 +3,8 @@
 <head>
     <title>Modern Flask Web Page</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <style>
         body {
@@ -35,10 +37,38 @@
         <h1>Master's Recommendation System</h1>
         <p>Find the right universities for you when searching for a Master's Program!</p>
     </div>
-    <div class="container">
+
+
         <form method="POST" action="/recommendation">
             <div class="container">
+                    <h3>Universities in Our Data:</h3>
+                    <label for="countryFilter">Filter by Country:</label>
+                    <select id="countryFilter" class="form-control" name="country" multiple>  <!-- Add the "multiple" attribute here -->
+                        <option value="">All</option>
+                        {% for country in unique_countries %}
+                            <option value="{{ country }}">{{ country }}</option>
+                        {% endfor %}
+                    </select>
 
+                    <br><br>
+                    <table id="mergedTable" class="display">
+                        <thead>
+                            <tr>
+                                <th>University</th>
+                                <th>Country</th>
+                            </tr>
+                        </thead>
+                       <tbody>
+                            {% for row in merged_data %}
+                                <tr>
+                                    <td>{{ row['University'] }}</td>
+                                    <td>{{ row['Country'] }}</td>
+                                </tr>
+                            {% endfor %}
+                       </tbody>
+                    </table>
+
+                <br>
                 <div class="form-group">
                     <label for="major">Hangi bölümde okuyorsunuz? LİSANS</label>
                     <input type="text" class="form-control" id="major" name="major" required>
@@ -145,7 +175,7 @@
                 </div>
 
 
-                <button type="submit" class="btn btn-primary">Get Recommendation</button>
+                <button id="recommendationBtn" type="submit" class="btn btn-primary">Get Recommendation</button>
             </div>
         </form>
     </div>
@@ -156,6 +186,21 @@
         </div>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script>
+        $(document).ready(function() {
+            // Initialize the DataTable plugin
+            $('#mergedTable').DataTable();
+
+            // Filter table based on selected countries
+            $('#countryFilter').change(function() {
+                var selectedCountries = $(this).val();
+                $('#mergedTable').DataTable().columns(1).search(selectedCountries.join('|'), true, false).draw();
+            });
+
+            // Submit the form when the recommendation button is clicked
+            $('#recommendationBtn').click(function() {
+                $('form').submit();
+            });
+        });
     </script>
 </body>
 </html>
