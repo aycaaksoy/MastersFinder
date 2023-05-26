@@ -40,16 +40,18 @@
 
 
         <form method="POST" action="/recommendation">
+            <div id="countryFilter">
+              <label for="allCountries">
+                <input type="checkbox" id="allCountries" value="allCountries"> All
+              </label>
+              {% for country in unique_countries %}
+                <label for="{{ country }}">
+                  <input type="checkbox" id="{{ country }}" value="{{ country }}"> {{ country }}
+                </label>
+              {% endfor %}
+                <input type="hidden" id="selectedCountries" name="selectedCountries">
+            </div>
             <div class="container">
-                    <h3>Universities in Our Data:</h3>
-                    <label for="countryFilter">Filter by Country:</label>
-                    <select id="countryFilter" class="form-control" name="country" multiple>  <!-- Add the "multiple" attribute here -->
-                        <option value="">All</option>
-                        {% for country in unique_countries %}
-                            <option value="{{ country }}">{{ country }}</option>
-                        {% endfor %}
-                    </select>
-
                     <br><br>
                     <table id="mergedTable" class="display">
                         <thead>
@@ -186,21 +188,38 @@
         </div>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function() {
-            // Initialize the DataTable plugin
-            $('#mergedTable').DataTable();
+              $(document).ready(function() {
+        // Initialize the DataTable plugin
+        var table = $('#mergedTable').DataTable();
 
-            // Filter table based on selected countries
-            $('#countryFilter').change(function() {
-                var selectedCountries = $(this).val();
-                $('#mergedTable').DataTable().columns(1).search(selectedCountries.join('|'), true, false).draw();
-            });
+        // Filter table based on selected countries
+        $('#countryFilter input[type="checkbox"]').change(function() {
+          var selectedCountries = $('#countryFilter input[type="checkbox"]:checked').map(function() {
+            return this.value;
+          }).get();
 
-            // Submit the form when the recommendation button is clicked
-            $('#recommendationBtn').click(function() {
-                $('form').submit();
-            });
+          if ($('#allCountries').is(':checked')) {
+            // If "All" checkbox is checked, clear the search and display all rows
+            table.search('').draw();
+          } else {
+            // Filter the table based on selected countries
+            if (selectedCountries.length > 0) {
+              table.columns(1).search(selectedCountries.join('|'), true, false).draw();
+            } else {
+              // If no countries are selected, clear the search and display all rows
+              table.search('').draw();
+            }
+          }
+
+          // Update the hidden input field with selected countries
+          $('#selectedCountries').val(selectedCountries.join(','));
         });
+
+        // Submit the form when the recommendation button is clicked
+        $('#recommendationBtn').click(function() {
+          $('form').submit();
+        });
+      });
     </script>
 </body>
 </html>
