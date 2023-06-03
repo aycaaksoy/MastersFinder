@@ -63,7 +63,7 @@
                        <tbody>
                             {% for row in merged_data %}
                                 <tr>
-                                    <td>{{ row['University'] }}</td>
+                                    <td>{{ row['University Name'] }}</td>
                                     <td>{{ row['Country'] }}</td>
                                 </tr>
                             {% endfor %}
@@ -72,15 +72,15 @@
 
                 <br>
                 <div class="form-group">
-                    <label for="major">Hangi bölümde okuyorsunuz? LİSANS</label>
+                    <label for="major">Which undergraduate programme are you/ were you studying? </label>
                     <input type="text" class="form-control" id="major" name="major" required>
                 </div>
                 <div class="form-group">
-                    <label for="university">Hangi ünide okuyorsunuz? LİSANS</label>
+                    <label for="university">Which university are you/ were you studying at?</label>
                     <input type="text" class="form-control" id="university" name="university" required>
                 </div>
                 <div class="form-group">
-                    <p>Üniversitenin Dünya Sıralaması:</p>
+                    <p>World ranking of the institution:</p>
                      <input type="radio" id="1-1" name="q1" value="1">
                      <label for="1-1">1</label>
                      <input type="radio" id="1-2" name="q1" value="2">
@@ -93,7 +93,7 @@
                      <label for="1-5">5</label>
                 </div>
                 <div class="form-group">
-                    <p>Üniversitenin Akademik Bilinirliği:</p>
+                    <p>Academic reputation of the institution:</p>
                      <input type="radio" id="2-1" name="q2" value="1">
                      <label for="2-1">1</label>
                      <input type="radio" id="2-2" name="q2" value="2">
@@ -107,7 +107,7 @@
                 </div>
 
                 <div class="form-group">
-                    <p>Üniversitenin Araştırma ve Yayıma Verdiği Önem:</p>
+                    <p>Importance given on research and publication by the university:</p>
                     <input type="radio" id="3-1" name="q3" value="1">
                     <label for="3-1">1</label>
                     <input type="radio" id="3-2" name="q3" value="2">
@@ -121,7 +121,7 @@
                 </div>
 
                 <div class="form-group">
-                    <p>Programın İçeriği:</p>
+                    <p>Curriculum of the program:</p>
                     <input type="radio" id="4-1" name="q4" value="1">
                     <label for="4-1">1</label>
                     <input type="radio" id="4-2" name="q4" value="2">
@@ -135,7 +135,7 @@
                 </div>
 
                 <div class="form-group">
-                    <p>Programın Akademik Bilinirliği:</p>
+                    <p>Academic reputation of the program:</p>
                     <input type="radio" id="5-1" name="q5" value="1">
                     <label for="5-1">1</label>
                     <input type="radio" id="5-2" name="q5" value="2">
@@ -149,7 +149,7 @@
                 </div>
 
                 <div class="form-group">
-                    <p>Programın Eğitim Dili:</p>
+                    <p>Language of the program:</p>
                     <input type="radio" id="6-1" name="q6" value="1">
                     <label for="6-1">1</label>
                     <input type="radio" id="6-2" name="q6" value="2">
@@ -163,7 +163,7 @@
                 </div>
 
                 <div class="form-group">
-                    <p>İngilizce konuşulan çevre:</p>
+                    <p>English-speaking environment:</p>
                     <input type="radio" id="7-1" name="q7" value="1">
                     <label for="7-1">1</label>
                     <input type="radio" id="7-2" name="q7" value="2">
@@ -177,10 +177,10 @@
                 </div>
 
 
-                <button id="recommendationBtn" type="submit" class="btn btn-primary">Get Recommendation</button>
+                <button id="recommendationBtn" type="submit" class="btn btn-primary">Get University Recommendations</button>
             </div>
         </form>
-    </div>
+
         <div id="result" class="mt-4">
               {% if result %}
                 {{ result|safe }}

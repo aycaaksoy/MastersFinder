@@ -16,7 +16,7 @@ unique_countries = merged_data['Country'].unique().tolist()
 
 @app.route('/')
 def index():
-    merged_data_for_index = merged_data[["University", "Country"]]
+    merged_data_for_index = merged_data[["University Name", "Country"]]
     return render_template('index.html', merged_data=merged_data_json, unique_countries=unique_countries)
 
 
@@ -111,7 +111,7 @@ def find_similar_universities(university, datav1):
         print("No data available")
         return []
 
-    matched_row = merged_data[merged_data['University'] == university]
+    matched_row = merged_data[merged_data['University Name'] == university]
     if matched_row.empty:
         print(f"No matching universities found for the selected countries")
         return []
@@ -120,7 +120,7 @@ def find_similar_universities(university, datav1):
     matched_cluster_id = matched_row['Cluster'].values[0]
 
     # Find all universities with the same cluster IDs
-    unis = datav1[datav1['Cluster'] == matched_cluster_id]['University'].tolist()
+    unis = datav1[datav1['Cluster'] == matched_cluster_id]['University Name'].tolist()
 
     return unis
 
