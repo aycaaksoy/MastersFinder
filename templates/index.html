@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Modern Flask Web Page</title>
+    <title>Master's Finder</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
     <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <style>
-        body {
-            margin-left:  20px;
-            margin-right:  20px;
-            margin-bottom:  20px;
-        }
+
 
         #result {
             margin-top: 20px;
@@ -29,18 +25,17 @@
 
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Master's Recommendation</a>
+        <a class="navbar-brand" href="#">Master's Finder</a>
+        <a class="navbar-brand" href="#">About</a>
     </nav>
     <div class="container mt-4">
         <h1>Master's Recommendation System</h1>
         <p>Find the right universities for you when searching for a Master's Program!</p>
+        <p style="color:DodgerBlue;">You can filter the Universities based on countries.</p>
     </div>
-
-
         <form method="POST" action="/recommendation">
-            <div id="countryFilter">
+            <div id="countryFilter" class="container mt-4">
               <label for="allCountries">
                 <input type="checkbox" id="allCountries" value="allCountries"> All
               </label>
@@ -51,6 +46,7 @@
               {% endfor %}
                 <input type="hidden" id="selectedCountries" name="selectedCountries">
             </div>
+
             <div class="container">
                     <br><br>
                     <table id="mergedTable" class="display">
@@ -79,6 +75,7 @@
                     <label for="university">Which university are you/ were you studying at?</label>
                     <input type="text" class="form-control" id="university" name="university" required>
                 </div>
+                <p style="color:DodgerBlue;">Please select the correct option for you (1: Not important at all, 2: Not important, 3:Neutral, 4: Important, 5: Very important)</p>
                 <div class="form-group">
                     <p>World ranking of the institution:</p>
                      <input type="radio" id="1-1" name="q1" value="1">
