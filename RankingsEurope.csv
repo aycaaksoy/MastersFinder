@@ -1,0 +1,242 @@
+﻿Country,University Name,University Score,Diversity Score
+Sweden,Karolinska Institute,98.414,90.273
+Switzerland,ETH Zurich,96.644,99.339
+UK,Imperial College London,96.113,94.151
+UK,University of Oxford,95.289,95.495
+Switzerland,Ecole Polytechnique Federale de Lausanne,94.733,100.000
+UK,University of Cambridge,94.554,95.484
+UK,University College London,93.124,93.841
+Denmark,Technical University of Denmark,91.867,92.229
+Italy,Scuola Normale Superiore di Pisa,90.791,70.171
+UK,University of Edinburgh,89.438,93.440
+Switzerland,University of Lausanne,87.912,73.505
+Germany,Ludwig Maximilian University,87.822,78.593
+Finland,University of Helsinki,86.987,69.115
+Germany,Technische Universitat Dresden (TU Dresden),86.803,69.972
+Netherlands,Wageningen University & Research Center,86.169,90.371
+Switzerland,University of Bern,85.985,86.547
+Switzerland,University of Geneva,85.941,95.072
+Germany,Technical University of Münich,85.721,84.871
+Sweden,Lund University,85.123,85.259
+UK,King’s College London,85.101,95.535
+UK,University of Southampton,84.687,91.805
+Sweden,Royal Institute of Technology (KTH),84.670,91.886
+UK,University of Manchester,84.523,91.101
+Netherlands,Utrecht University,84.519,78.928
+Germany,Technical University of Munich,84.094,84.871
+Switzerland,University of Zurich,84.075,93.333
+Netherlands,Delft University of Technology,83.848,95.622
+Germany,RWTH Aachen University,83.476,76.130
+Netherlands,Twente University,82.960,95.256
+Germany,Karlsruher Institut für Technologie,82.783,83.721
+France,Sorbonne University,82.554,82.395
+Netherlands,Amsterdam Üniversitesi,82.459,89.952
+Sweden,Stockholm University,82.234,53.853
+Germany,University of Gottingen,82.113,74.454
+UK,University of Bristol,82.027,86.302
+France,"Ecole Normale Superieure, Lyon",81.929,68.957
+Denmark,Aarhus University,81.726,80.526
+UK,London School of Economics and Political Science,81.475,93.533
+Germany,Karlsruhe Institute of Technology,81.449,83.721
+UK,University of Sheffield,81.350,44.618
+France,Universite Paris-Sud,81.094,74.407
+Sweden,Chalmers University of Technology,80.971,83.103
+UK,University of Glasgow,80.918,90.590
+Netherlands,Radboud University Nijmegen,80.680,78.986
+France,IMT Atlantique,80.267,76.312
+UK,Lancaster University,80.168,91.269
+UK,Queen Mary University of London,79.961,92.934
+Sweden,University of Gothenburg,79.791,74.904
+Netherlands,University of Groningen,79.776,87.574
+Netherlands,Erasmus University Rotterdam,79.453,86.066
+UK,University of St. Andrews,79.373,94.149
+Austria,University of Vienna,79.031,43.069
+Germany,Berlin School Of Economics and Law,78.646,85.945
+Germany,University of Wurzburg,78.468,69.759
+Germany,University of Bonn,78.454,78.317
+Germany,Berlin Technical University,78.438,90.355
+UK,University of Birmingham,78.419,88.832
+UK,University of Warwick,78.413,43.438
+Germany,University of Münster,78.234,78.928
+Norway,University of Bergen,78.000,79.069
+Germany,University of Stuttgart,77.347,78.975
+Belgium,Katholieke Universiteit Leuven (KU Leuven),77.269,83.711
+UK,Newcastle University,77.180,86.062
+UK,Cardiff University,76.792,83.527
+Spain,Autonomous University of Barcelona,76.666,73.939
+Ireland,Trinity College Dublin,76.519,44.022
+Germany,Berlin Humboldt University,76.484,88.571
+Sweden,Swedish University of Agricultural Sciences,76.430,53.153
+Germany,University of Erlangen Nuremberg,76.330,64.148
+UK,Durham University,75.951,88.081
+UK,University of York,75.816,81.716
+Finland,Aalto University,75.792,86.463
+France,Universite Paris Cite,75.755,72.096
+UK,University of Reading,75.590,88.407
+Germany,University of Freiburg,75.525,81.135
+Belgium,Vrije Universiteit Brussels (VUB),75.192,79.499
+Belgium,Ghent University,74.995,75.314
+Belgium,University Catholique de Louvain,74.835,83.231
+Germany,Technische Universität Darmstadt,74.762,54.533
+UK,University of Liverpool,74.529,85.726
+France,University of Montpellier,74.432,70.530
+France,Universite de Paris,74.395,76.467
+Italy,University of Bologna,74.234,89.503
+Germany,University of Manheim,74.204,89.451
+UK,University of Aberdeen,74.031,89.616
+Germany,Albert-Ludwigs-Universität Freiburg,74.005,69.092
+UK,University of Exeter,73.676,87.534
+Germany,University of Konstanz,73.087,56.249
+Germany,University of Ulm,72.901,62.161
+Germany,University of Barcelona,72.885,72.615
+Spain,University of Nova Gorica,72.501,75.518
+Italy,University of Padua,72.422,60.638
+Italy,Queen`s University Belfast,72.207,91.608
+UK,University Grenoble Alpes ,72.061,76.085
+England,University of Sussex,71.890,91.341
+UK,Aix Marseille University,71.745,67.738
+Denmark,Aalborg University,71.406,79.092
+UK,SOAS University of London,71.298,84.239
+France,ENS Paris,71.248,72.740
+Spain,University of Navarra,71.136,78.928
+Italy,Florence University,70.971,74.237
+Estonia,University of Tartu,70.951,63.865
+Belgium,University of Antwerp,70.842,75.303
+Hungary,Semmelweis University,70.691,63.351
+Switzerland,USI - Universita della Svizzera italiana,70.669,87.341
+UK,University of Bath,70.342,84.989
+Ireland,University College Dublin,70.215,87.891
+UK,"Royal Holloway, University of London",70.159,89.521
+UK,University of Strathclyde,70.072,82.859
+Norway,Norwegian University of Science and Technology,69.989,73.259
+Sweden,Umea University,69.930,66.572
+UK,Loughborough University,69.660,79.824
+Netherlands,University of Tilburg,69.596,91.318
+Italy,Sapienza University of Rome,69.208,56.481
+Germany, Potsdam University,69.107,77.092
+UK,University of Surrey,69.080,89.234
+Italy,University of Trieste,69.076,58.718
+UK,St George`s University of London,69.072,73.827
+Germany,Bielefeld University,68.828,59.529
+France,Claude Bernard University Lyon 1,68.740,69.348
+UK,School of Oriental and African Studies (SOAS University),68.715,77.560
+Finland,University of Jyvaskyla,68.422,83.163
+UK,University of Dundee,68.404,79.868
+Germany,University of Bremen,68.290,69.339
+Belgium,Universite Libre de Bruxelles,68.274,79.440
+Spain,Pompeu Fabra University,68.013,75.764
+France,Université de Strasbourg,67.823,57.572
+UK,University of East Anglia,67.285,81.304
+France,University of Bordeaux,66.282,67.823
+Germany,Freie Universität Berlin,66.165,84.651
+Finland,Lappeenranta University of Technology,65.958,56.155
+UK,"Birkbeck, University of London",65.939,75.328
+Spain,Autonomous University of Madrid,65.681,66.374
+Germany,Johann Wolfgang Goethe University Frankfurt am Main,65.669,69.629
+UK,Brunel University,65.459,88.405
+Italy,University of Genoa,65.297,51.860
+Finland,University of Oulu,65.286,63.704
+UK,Heriot-Watt University,65.282,87.771
+Germany,University of Leipzig,65.215,64.356
+Italy,University of Pisa,65.133,53.499
+Finland,University of Turku,64.412,60.887
+Spain,Polytechnic University of Catalonia,63.370,66.491
+Germany,University of Hannover,63.226,63.022
+UK,University of Essex,62.947,89.863
+Finland,University of Eastern Finland,62.674,55.671
+Italy,Polytechnic University of Milan,62.429,72.209
+Switzerland,University of St. Gallen,62.244,78.417
+Hungary,Central European University,61.945,90.285
+UK,Swansea University,61.263,73.020
+Ireland,University College Cork,61.195,83.231
+France,Universite Cote d`Azur (ComUE),60.320,47.168
+Spain,Polytechnic University of Valencia,60.313,54.594
+UK,Goldsmiths College,60.201,71.444
+France,Toulouse School of Management,59.634,54.532
+Italy,Polytechnic University of Turin,59.532,56.620
+Norway,University of Tromso,59.365,65.916
+UK,Aberystwyth University,59.213,71.937
+UK,University of Stirling,58.680,76.060
+Hungary,University of Debrecen,58.618,61.916
+Lithuania,Vilnius University,58.077,38.985
+Italy,University of Brescia,57.812,47.106
+UK,Keele University,57.499,65.206
+Spain,University of Valencia,57.424,53.177
+Germany,Frankfurt School of Finance and Management,57.300,69.985
+Hungary,University of Szeged,57.030,58.080
+Ireland,University of Limerick,56.569,53.636
+Italy,Universita della Svizerra Italiana,56.435,42.165
+Italy,University of Ferrara,56.141,34.323
+Italy,Padova University,56.135,88.122
+UK,Politecnico di Milano,56.107,58.409
+Italy,University of Hull,56.107,76.060
+Italy,Politecnico di Torino,56.104,52.409
+Spain,Charles III University of Madrid,56.047,68.335
+Spain,University of Rovira i Virgili,55.769,55.445
+UK,University of Plymouth,55.667,70.898
+France,University de Lorraine,55.575,69.585
+Hungary,Eotvos Lorand University,55.506,62.755
+Slovenia,University of Ljubljana,55.139,50.915
+Spain,University of Santiago de Compostela,54.893,50.304
+Italy,University of Palermo,54.754,30.586
+Spain,Polytechnic University of Madrid,54.627,54.613
+UK,Oxford Brookes University,53.809,78.122
+Spain,Complutense University of Madrid,53.792,57.538
+Hungary,University of Pecs,53.565,45.177
+UK,Aston University,53.549,79.873
+Ireland,Dublin City University,53.297,78.163
+UK,Liverpool John Moores University,53.215,70.933
+Italy,Ca`Foscari University of Venice,53.107,59.372
+Italy,University of Turin,52.079,51.638
+Greece,University of Crete,52.028,47.669
+Italy,University of Rome III,51.688,53.324
+Italy,University of Salento,51.320,34.243
+UK,University of Bradford,51.237,70.140
+Spain,University of Alcala,51.094,60.737
+UK,Northumbria University,51.057,69.950
+Spain,University of the Basque Country,50.514,44.239
+France,IMT Mines Albi,50.252,57.789
+Spain,University of Zaragoza,50.107,43.867
+Italy,Universita Cattolica del Sacro Cuore,49.854,52.235
+UK,University of Portsmouth,49.790,76.339
+UK,University of Ulster,49.622,68.127
+Spain,University of Salamanca,49.362,56.238
+Spain,University of Valladolid,47.794,42.954
+UK,Middlesex University,47.633,77.547
+Spain,University of Seville,47.323,52.870
+Switzerland,University of Lucerne,47.016,57.315
+Greece,Aristotle University of Thessaloniki,46.826,47.109
+Spain,University of Vigo,46.516,93.803
+Italy,University of Salerno,46.251,37.329
+France,IMT MINES ALES,46.157,53.540
+UK,University of Westminster,45.671,76.125
+Ireland,Maynooth University,45.527,65.874
+UK,Coventry University,45.407,56.424
+UK,University of Central Lancashire,45.224,65.089
+UK,University of Huddersfield,44.862,64.150
+UK,Manchester Metropolitan University,44.758,70.279
+UK,University of Hertfordshire,44.377,73.386
+Italy,University of Bari,43.791,38.780
+UK,University of Greenwich,43.563,69.926
+UK,Glasgow Caledonian University,43.087,62.509
+Slovenia,University of Maribor,42.942,43.016
+Italy,University of Tuscia,42.435,38.582
+UK,University of the West of England,41.281,62.919
+France,Universite de Paris-Nord - Paris 13,40.806,58.807
+Greece,University of Patras,40.790,32.681
+UK,Sheffield Hallam University,40.338,59.180
+UK,De Montfort University,39.024,67.159
+UK,London Metropolitan University,37.671,68.129
+Spain,IQS Universitat Ramon Llull,37.657,50.063
+UK,Leeds Beckett University,35.397,50.209
+Hungary,University of Sopron,35.336,41.589
+Germany,Kuehne Logistics University,35.320,30.209
+Ireland,Dublin Institute of Technology,35.176,79.973
+Italy,D`Annunzio University,34.912,91.382
+Greece,Athens University of Economics and Business,34.513,45.660
+Germany,Tübingen University,34.201,51.025
+Switzerland,Swiss Montreux Business School,33.036,40.173
+Greece,Democritus University of Thrace,30.216,24.443
+Spain,Rey Juan Carlos University,29.599,38.018
+Spain,ESIC Business and Marketing School,28.776,50.064
+France,Eurecom (Grande Ecole),26.176,29.623

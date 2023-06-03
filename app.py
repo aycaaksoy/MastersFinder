@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # Load your survey data into a pandas DataFrame
 data = pd.read_csv("C:/Users/aycaa/PycharmProjects/MastersFinder/260Datav2.csv")
-merged_data = pd.read_csv("C:/Users/aycaa/PycharmProjects/MastersFinder/merged_data.csv")
+merged_data = pd.read_csv("C:/Users/aycaa/PycharmProjects/MastersFinder/clustered_data.csv")
 
 # Convert the merged_data DataFrame to a JSON object
 merged_data_json = json.loads(merged_data.to_json(orient='records'))
@@ -74,6 +74,7 @@ def recommendation():
     # Concatenate the user input DataFrame to the existing dataset
     data_with_input = pd.concat([data, user_input_df], ignore_index=True)
 
+    # Prepare the data for Gower's distance calculation
     categorical_cols = ["Hangi bölümde okuyorsunuz? LİSANS", "Hangi ünide okuyorsunuz? LİSANS"]
     numerical_cols = ["Üniversitenin Dünya Sıralaması", "Üniversitenin Akademik Bilinirliği",
                       "Üniversitenin Araştırma ve Yayıma Verdiği Önem", "Programın İçeriği",
