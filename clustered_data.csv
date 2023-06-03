@@ -3,7 +3,7 @@ Sweden,Karolinska Institute,98.414,90.273,2
 Switzerland,ETH Zurich,96.644,99.339,2
 UK,Imperial College London,96.113,94.151,2
 UK,University of Oxford,95.289,95.495,2
-Switzerland,Ecole Polytechnique Federale de Lausanne,94.733,100.0,2
+Switzerland,Ecole Polytechnique Federale de Lausanne,94.733,100,2
 UK,University of Cambridge,94.554,95.484,2
 UK,University College London,93.124,93.841,2
 Denmark,Technical University of Denmark,91.867,92.229,2
@@ -58,7 +58,7 @@ Germany,Berlin Technical University,78.438,90.355,2
 UK,University of Birmingham,78.419,88.832,2
 UK,University of Warwick,78.413,43.438,1
 Germany,University of Münster,78.234,78.928,0
-Norway,University of Bergen,78.0,79.069,0
+Norway,University of Bergen,78,79.069,0
 Germany,University of Stuttgart,77.347,78.975,0
 Belgium,Katholieke Universiteit Leuven (KU Leuven),77.269,83.711,2
 UK,Newcastle University,77.18,86.062,2
@@ -92,9 +92,9 @@ Germany,University of Barcelona,72.885,72.615,0
 Spain,University of Nova Gorica,72.501,75.518,0
 Italy,University of Padua,72.422,60.638,0
 Italy,Queen`s University Belfast,72.207,91.608,2
-UK,University Grenoble Alpes ,72.061,76.085,0
+France,University Grenoble Alpes ,72.061,76.085,0
 England,University of Sussex,71.89,91.341,2
-UK,Aix Marseille University,71.745,67.738,0
+France,Aix Marseille University,71.745,67.738,0
 Denmark,Aalborg University,71.406,79.092,0
 UK,SOAS University of London,71.298,84.239,2
 France,ENS Paris,71.248,72.74,0
